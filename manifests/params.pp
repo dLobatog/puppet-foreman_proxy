@@ -10,10 +10,11 @@ class foreman_proxy::params {
       $custom_repo         = false
       $plugin_prefix       = 'rubygem-smart_proxy_'
 
-      $dir   = '/usr/share/foreman-proxy'
-      $etc   = '/etc'
-      $shell = '/bin/false'
-      $user  = 'foreman-proxy'
+      $dir     = '/usr/share/foreman-proxy'
+      $var_dir = '/var/lib/foreman-proxy'
+      $etc     = '/etc'
+      $shell   = '/bin/false'
+      $user    = 'foreman-proxy'
 
       $puppet_home = '/var/lib/puppet'
 
@@ -39,10 +40,11 @@ class foreman_proxy::params {
       $custom_repo         = false
       $plugin_prefix       = 'ruby-smart-proxy-'
 
-      $dir   = '/usr/share/foreman-proxy'
-      $etc   = '/etc'
-      $shell = '/bin/false'
-      $user  = 'foreman-proxy'
+      $dir     = '/usr/share/foreman-proxy'
+      $var_dir = '/var/lib/foreman-proxy'
+      $etc     = '/etc'
+      $shell   = '/bin/false'
+      $user    = 'foreman-proxy'
 
       $puppet_home = '/var/lib/puppet'
 
@@ -85,10 +87,11 @@ class foreman_proxy::params {
       $custom_repo         = true # as foreman packages are in standard FreeBSD ports
       $plugin_prefix       = 'rubygem-smart_proxy_'
 
-      $dir   = '/usr/local/share/foreman-proxy'
-      $etc   = '/usr/local/etc'
-      $shell = '/usr/bin/false'
-      $user  = 'foreman_proxy'
+      $dir     = '/usr/local/share/foreman-proxy'
+      $var_dir = '/var/lib/foreman-proxy'
+      $etc     = '/usr/local/etc'
+      $shell   = '/usr/bin/false'
+      $user    = 'foreman_proxy'
 
       $puppet_home   = '/var/puppet'
       $puppet_bindir = '/usr/local/bin'
@@ -120,10 +123,11 @@ class foreman_proxy::params {
       $custom_repo         = true # package is in the AUR
       $plugin_prefix       = 'ruby-smart-proxy-'
 
-      $dir   = '/usr/share/foreman-proxy'
-      $etc   = '/etc'
-      $shell = '/usr/bin/false'
-      $user  = 'foreman-proxy'
+      $dir     = '/usr/share/foreman-proxy'
+      $var_dir = '/var/lib/foreman-proxy'
+      $etc     = '/etc'
+      $shell   = '/usr/bin/false'
+      $user    = 'foreman-proxy'
 
       $puppet_home   = '/var/lib/puppet'
       $puppet_bindir = '/usr/bin'

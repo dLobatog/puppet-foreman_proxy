@@ -1,5 +1,10 @@
 # Configure the foreman proxy
 class foreman_proxy::config {
+  file { $::foreman_proxy::var_dir:
+    ensure => directory,
+    owner  => $::foreman_proxy::user,
+    group  => $::foreman_proxy::user,
+  }
 
   # Ensure SSL certs from the puppetmaster are available
   # Relationship is duplicated there as defined() is parse-order dependent
